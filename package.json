@@ -1,0 +1,31 @@
+{
+  "name": "esy-openh264",
+  "version": "0.0.000",
+  "description": "openh264 packaged for esy",
+  "esy": {
+    "buildsInSource": true,
+    "buildEnv": {
+      "PREFIX": "#{self.install}",
+      "CC": "#{os == 'windows' ? 'x86_64-W64-mingw32-gcc': 'cc'}",
+      "CXX": "#{os == 'windows' ? 'x86_64-W64-mingw32-g++': 'g++'}"
+    },
+    "exportedEnv": {
+      "PKG_CONFIG_PATH": {
+        "scope": "global",
+        "val": "#{self.lib / 'pkgconfig' : $PKG_CONFIG_PATH }"
+      }
+    },
+    "build": [
+      "make "
+    ],
+    "install": [
+      "make install"
+    ]
+  },
+  "dependencies": {
+    "esy-flex": "prometheansacrifice/esy-flex#005276648a7a33b27a90661f0edddb35946585b2",
+    "pkg-config": "esy-ocaml/yarn-pkg-config#cca65f99674ed2d954d28788edeb8c57fada5ed0",
+    "esy-nasm": "prometheansacrifice/esy-nasm#6240bdbb164476558d3738812fbbe48f66cc904a"
+  },
+  "resolutions": {}
+}
