@@ -1,3 +1,5 @@
+[![Build Status](https://dev.azure.com/prometheansacrifice/esy-packages/_apis/build/status/prometheansacrifice.esy-openh264?branchName=master)](https://dev.azure.com/prometheansacrifice/esy-packages/_build/latest?definitionId=32&branchName=master)
+
 OpenH264
 ========
 OpenH264 is a codec library which supports H.264 encoding and decoding. It is suitable for use in real time applications such as WebRTC. See http://www.openh264.org/ for more details.
