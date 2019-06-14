@@ -25,7 +25,7 @@
   },
   "dependencies": {
     "esy-flex": "prometheansacrifice/esy-flex#3ddbc609435e130852f882b794c866ee180cae8f",
-    "pkg-config": "esy-ocaml/yarn-pkg-config#cca65f99674ed2d954d28788edeb8c57fada5ed0",
+    "pkg-config": "prometheansacrifice/yarn-pkg-config#cc5b4f913cccee781461b16d49b902c84727e7ed",
     "esy-nasm": "prometheansacrifice/esy-nasm#6240bdbb164476558d3738812fbbe48f66cc904a"
   },
   "resolutions": {}
